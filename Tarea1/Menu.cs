@@ -13,7 +13,7 @@ namespace Ejercicio_Aplicada.Tarea1
             Comparacion comparar = new Comparacion();
 
             
-            //hola
+            
             int opcion;
             Console.WriteLine("1.Imprime mi nombre y el mensaje ya creado");
             Console.WriteLine("2.Calcula el area y perimetro de un poligono");
@@ -92,7 +92,7 @@ namespace Ejercicio_Aplicada.Tarea1
                     case 12:
                         Console.Clear();
                         int op = 0;
-                        Console.WriteLine("Salida del menu presione 1 y sino quiere salir presione el dos");
+                        Console.WriteLine("Salida del menu presione 1 y sino quiere salir presione el 2");
                         op = Convert.ToInt32(Console.ReadLine());
                         do
                         {
@@ -100,8 +100,8 @@ namespace Ejercicio_Aplicada.Tarea1
                             {
                                 case 1:
                                     Console.Clear();
-                                    Environment.ExitCode;
                                     Console.WriteLine("Gracias por compilar este Codigo");
+                                    Environment.Exit(0);
                                     break;
 
                                 case 2:
@@ -121,7 +121,7 @@ namespace Ejercicio_Aplicada.Tarea1
                         break;
 
                 }
-            } while (opcion > 0 && opcion < 12);
+            } while (opcion > 0 && opcion < 13);
                 Console.Clear();
                 Menu m = new Menu();
         }

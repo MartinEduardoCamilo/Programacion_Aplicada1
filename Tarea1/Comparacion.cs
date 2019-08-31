@@ -16,6 +16,11 @@ namespace Ejercicio_Aplicada.Tarea1
                 Console.WriteLine("Es par");
             else
                 Console.WriteLine("Es Impar");
+
+            Console.WriteLine("Presione una tecla para Volver el menu");
+            Console.ReadKey();// presione una tecla para retornar al menu
+            Console.Clear();
+            Menu m = new Menu();
         }
 
         public void Diasemana()
