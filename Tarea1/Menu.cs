@@ -12,7 +12,7 @@ namespace Ejercicio_Aplicada.Tarea1
             Poligono P = new Poligono();
             Comparacion comparar = new Comparacion();
             
-
+            //hola
             int opcion;
             Console.WriteLine("1.Imprime mi nombre y el mensaje ya creado");
             Console.WriteLine("2.Calcula el area y perimetro de un poligono");
