@@ -11,6 +11,7 @@ namespace Ejercicio_Aplicada.Tarea1
             Conversiones C = new Conversiones();
             Poligono P = new Poligono();
             Comparacion comparar = new Comparacion();
+
             
             //hola
             int opcion;
@@ -25,6 +26,7 @@ namespace Ejercicio_Aplicada.Tarea1
             Console.WriteLine("9.Tabla de Multiplicar");
             Console.WriteLine("10.Potencia");
             Console.WriteLine("11.Edad promedio de un grupo de persona");
+            Console.WriteLine("12.Salida");
             Console.WriteLine("\nElige una opcion: ");
             
             do
@@ -85,6 +87,33 @@ namespace Ejercicio_Aplicada.Tarea1
                     case 11:
                         Console.Clear();
                         PromedioGrupoPersona media = new PromedioGrupoPersona();
+                        break;
+
+                    case 12:
+                        Console.Clear();
+                        int op = 0;
+                        Console.WriteLine("Salida del menu presione 1 y sino quiere salir presione el dos");
+                        op = Convert.ToInt32(Console.ReadLine());
+                        do
+                        {
+                            switch (op)
+                            {
+                                case 1:
+                                    Console.Clear();
+                                    Environment.ExitCode;
+                                    Console.WriteLine("Gracias por compilar este Codigo");
+                                    break;
+
+                                case 2:
+                                    Console.Clear();
+                                    Menu M = new Menu();
+                                    break;
+
+                                default: Console.WriteLine("Opcion no valida");
+                                    break;
+                            }
+                        } while (op > 0 && op < 3);
+                        
                         break;
 
                     default:
