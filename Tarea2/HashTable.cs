@@ -17,7 +17,7 @@ namespace Ejercicio_Aplicada.Tarea2
             {
                 Console.WriteLine("Digite la palabra: ");
                 String palabra = Console.ReadLine();
-                Console.WriteLine("Digite la definición ;");
+                Console.WriteLine("Digite la definición ");
                 String definicion = Console.ReadLine();
                 diccionario.Add(palabra, definicion);
             }

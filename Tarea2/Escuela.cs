@@ -8,45 +8,51 @@ namespace Ejercicio_Aplicada.Tarea2
     {
         public Escuela()
         {
-            int cantidadEstudiantes = 0, cantidadSalones = 0;
-            float suma = 0.0f;
-            float promedio = 0.0f;
+            int cantidadestudiantes = 0;
+            int cantidadsalones = 0;
+            float suma = 0;
+            float promedio = 0;
 
             Console.Write("\nDigite la cantidad de salones: ");
-            cantidadSalones = Convert.ToInt32(Console.ReadLine());
+            cantidadsalones = Convert.ToInt32(Console.ReadLine());
 
-            float[][] calificaciones = new float[cantidadSalones][];
+            float[][] calificacion = new float[cantidadsalones][];
 
-            for (int i = 0; i < cantidadSalones; i++)
+            for (int i = 0; i < cantidadsalones; i++)
             {
                 Console.Write("\nDigite la cantidad de estudiantes para el salon {0}: ", i + 1);
 
-                cantidadEstudiantes = Convert.ToInt32(Console.ReadLine());
+                cantidadestudiantes = Convert.ToInt32(Console.ReadLine());
 
-                calificaciones[i] = new float[cantidadEstudiantes];
+                calificacion[i] = new float[cantidadestudiantes];
             }
 
-            for (int i = 0; i < cantidadSalones; i++)
+            for (int i = 0; i < cantidadsalones; i++)
             {
                 Console.WriteLine("\nCurso {0}\n ", i + 1);
-                for (int j = 0; j < calificaciones[i].GetLength(0); j++)
+                for (int j = 0; j < calificacion[i].GetLength(0); j++)
                 {
-                    Console.Write("Digita la calificacion del estudiante: {0} ", 1 + j);
-                    calificaciones[i][j] = Convert.ToSingle(Console.ReadLine());
+                    Console.Write("Digita la alificación  del estudiante: {0} ", 1 + j);
+                    calificacion[i][j] = Convert.ToSingle(Console.ReadLine());
                 }
 
             }
 
-            for (int i = 0; i < cantidadSalones; i++)
+            for (int i = 0; i < cantidadsalones; i++)
             {
-                for (int j = 0; j < calificaciones[i].GetLength(0); j++)
+                for (int j = 0; j < calificacion[i].GetLength(0); j++)
                 {
-                    suma += calificaciones[i][j];
+                    suma += calificacion[i][j];
 
                 }
             }
-            promedio = suma / (cantidadEstudiantes * cantidadSalones);
+            promedio = suma / (cantidadestudiantes * cantidadsalones);
             Console.WriteLine("\nEl promedio es: {0}\n", promedio);
+
+            Console.WriteLine("Presione una tecla para Volver el menu");
+            Console.ReadKey();// presione una tecla para retornar al menu
+            Console.Clear();
+            MenuTarea2 m = new MenuTarea2();
         }
     }
 }

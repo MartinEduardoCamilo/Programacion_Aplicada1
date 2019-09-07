@@ -5,9 +5,9 @@ using System.Text;
 
 namespace Ejercicio_Aplicada.Tarea2
 {
-    class Alfabeto
+    class OrdenarCadena
     {
-        public Alfabeto()
+        public OrdenarCadena()
         {
             Console.WriteLine("Digite la cadena 1");
             String cadena1 = Console.ReadLine();
@@ -22,6 +22,11 @@ namespace Ejercicio_Aplicada.Tarea2
             {
                 Console.WriteLine("{0}", cadena);
             }
+
+            Console.WriteLine("Presione una tecla para Volver el menu");
+            Console.ReadKey();// presione una tecla para retornar al menu
+            Console.Clear();
+            MenuTarea2 m = new MenuTarea2();
         }
     }
-}
+  }

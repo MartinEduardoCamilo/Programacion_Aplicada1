@@ -10,6 +10,12 @@ namespace Ejercicio_Aplicada.Tarea2
         {
             Console.WriteLine(DateTime.Now.ToString("hh:mm tt yyyy/dd/MM"));
 
+
+            Console.WriteLine("Presione una tecla para Volver el menu");
+            Console.ReadKey();// presione una tecla para retornar al menu
+            Console.Clear();
+            MenuTarea2 m = new MenuTarea2();
         }
+
     }
 }

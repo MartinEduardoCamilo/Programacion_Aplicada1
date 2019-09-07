@@ -12,7 +12,7 @@ namespace Ejercicio_Aplicada.Tarea2
             int cantidadsalones = 0;
             int i = 0;
             int j = 0;
-            float minima = 100.0f;
+            float Notaminima = 100.0f;
 
             Console.Write("\nDigite la cantidad de salones: ");
 
@@ -43,13 +43,18 @@ namespace Ejercicio_Aplicada.Tarea2
             {
                 for (j = 0; j < calificacion[i].GetLength(0); j++)
                 {
-                    if (calificacion[i][j] < minima)
+                    if (calificacion[i][j] < Notaminima)
                     {
-                        minima = calificacion[i][j];
+                        Notaminima = calificacion[i][j];
                     }
                 }
             }
-            Console.WriteLine("\nLa nota más  baja es: {0}\n", minima);
+            Console.WriteLine("\nLa nota más  baja es: {0}\n", Notaminima);
+
+            Console.WriteLine("Presione una tecla para Volver el menu");
+            Console.ReadKey();// presione una tecla para retornar al menu
+            Console.Clear();
+            MenuTarea2 m = new MenuTarea2();
         }
     }
 }

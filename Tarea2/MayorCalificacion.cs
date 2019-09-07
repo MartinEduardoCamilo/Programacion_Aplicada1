@@ -12,7 +12,7 @@ namespace Ejercicio_Aplicada.Tarea2
             int cantidadsalones = 0;
             int i = 0;
             int j = 0;
-            float maxima = 0;
+            float Notamaxima = 0;
 
 
             Console.Write("\nDigite la cantidad de salones: ");
@@ -43,13 +43,18 @@ namespace Ejercicio_Aplicada.Tarea2
             {
                 for (j = 0; j < calificacion[i].GetLength(0); j++)
                 {
-                    if (calificacion[i][j] > maxima)
+                    if (calificacion[i][j] > Notamaxima)
                     {
-                        maxima = calificacion[i][j];
+                        Notamaxima = calificacion[i][j];
                     }
                 }
             }
-            Console.WriteLine("\nLa nota mas alta es: {0}\n", maxima);
+            Console.WriteLine("\nLa nota mas alta es: {0}\n", Notamaxima);
+
+            Console.WriteLine("Presione una tecla para Volver el menu");
+            Console.ReadKey();// presione una tecla para retornar al menu
+            Console.Clear();
+            MenuTarea2 m = new MenuTarea2();
         }
     }
 }

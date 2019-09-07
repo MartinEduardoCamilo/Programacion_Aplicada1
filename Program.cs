@@ -12,6 +12,8 @@ namespace Ejercicio_Aplicada
             int opcion = 0;
             Console.WriteLine("1.Menu de la tarea 1");
             Console.WriteLine("2.Menu de la Tarea 2");
+            Console.WriteLine("\nEliga una opción: ");
+            opcion = Convert.ToInt32(Console.ReadLine());
             switch (opcion)
             {
                 case 1:
