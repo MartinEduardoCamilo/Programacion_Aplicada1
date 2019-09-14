@@ -7,12 +7,15 @@ using System.Text;
 using System.Threading.Tasks;
 
 
-
 namespace Ejercicio_Aplicada
 { 
 
     static class Program
     {
+        /// <summary>
+        /// The main entry point for the application.
+        /// </summary>
+        [STAThread]
         static void Main()
         {
             int opcion = 0;
@@ -42,6 +45,7 @@ namespace Ejercicio_Aplicada
             }
         
         }
+      
      
     }
 }
