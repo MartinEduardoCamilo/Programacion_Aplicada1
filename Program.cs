@@ -12,7 +12,7 @@ namespace Ejercicio_Aplicada
 
     static class Program
     {
-        //hp
+        
         /// <summary>
         /// The main entry point for the application.
         /// </summary>
