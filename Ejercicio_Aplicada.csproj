@@ -8,6 +8,37 @@
   </PropertyGroup>
 
   <ItemGroup>
+    <Compile Include="obj\Debug\netcoreapp2.1\Ejercicio_Aplicada.AssemblyInfo.cs" />
+    <Compile Include="obj\Release\netcoreapp2.1\Ejercicio_Aplicada.AssemblyInfo.cs" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Content Include="obj\Debug\netcoreapp2.1\Ejercicio_Aplicada.csproj.FileListAbsolute.txt" />
+    <Content Include="obj\Ejercicio_Aplicada.csproj.nuget.dgspec.json" />
+    <Content Include="obj\project.assets.json" />
+    <Content Include="obj\Release\netcoreapp2.1\Ejercicio_Aplicada.csproj.FileListAbsolute.txt" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <None Include="Ejercicio_Aplicada.sln" />
+    <None Include="obj\Debug\netcoreapp2.1\Ejercicio_Aplicada.AssemblyInfoInputs.cache" />
+    <None Include="obj\Debug\netcoreapp2.1\Ejercicio_Aplicada.assets.cache" />
+    <None Include="obj\Debug\netcoreapp2.1\Ejercicio_Aplicada.csproj.CoreCompileInputs.cache" />
+    <None Include="obj\Debug\netcoreapp2.1\Ejercicio_Aplicada.csprojAssemblyReference.cache" />
+    <None Include="obj\Ejercicio_Aplicada.csproj.nuget.cache" />
+    <None Include="obj\Ejercicio_Aplicada.csproj.nuget.g.props" />
+    <None Include="obj\Ejercicio_Aplicada.csproj.nuget.g.targets" />
+    <None Include="obj\Release\netcoreapp2.1\Ejercicio_Aplicada.AssemblyInfoInputs.cache" />
+    <None Include="obj\Release\netcoreapp2.1\Ejercicio_Aplicada.assets.cache" />
+    <None Include="obj\Release\netcoreapp2.1\Ejercicio_Aplicada.csproj.CoreCompileInputs.cache" />
+    <None Include="obj\Release\netcoreapp2.1\Ejercicio_Aplicada.csprojAssemblyReference.cache" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\Tarea3\Tarea3.csproj" />
+  </ItemGroup>
+
+  <ItemGroup>
     <Reference Include="System.Windows.Forms.VisualStudio.15.0">
       <HintPath>..\..\..\..\..\Program Files (x86)\Microsoft Visual Studio\2019\Community\Common7\IDE\System.Windows.Forms.VisualStudio.15.0.dll</HintPath>
     </Reference>
@@ -20,6 +51,11 @@
     <EmbeddedResource Update="Form1.resx">
       <DependentUpon>Form1.cs</DependentUpon>
     </EmbeddedResource>
+  </ItemGroup>
+
+  <ItemGroup>
+    <Folder Include="bin\Debug\netcoreapp2.1\" />
+    <Folder Include="bin\Release\netcoreapp2.1\" />
   </ItemGroup>
 
 </Project>
