@@ -8,30 +8,22 @@
   </PropertyGroup>
 
   <ItemGroup>
-    <Compile Include="obj\Debug\netcoreapp2.1\Ejercicio_Aplicada.AssemblyInfo.cs" />
-    <Compile Include="obj\Release\netcoreapp2.1\Ejercicio_Aplicada.AssemblyInfo.cs" />
-  </ItemGroup>
-
-  <ItemGroup>
-    <Content Include="obj\Debug\netcoreapp2.1\Ejercicio_Aplicada.csproj.FileListAbsolute.txt" />
-    <Content Include="obj\Ejercicio_Aplicada.csproj.nuget.dgspec.json" />
-    <Content Include="obj\project.assets.json" />
-    <Content Include="obj\Release\netcoreapp2.1\Ejercicio_Aplicada.csproj.FileListAbsolute.txt" />
+    <Compile Remove="bin\**" />
+    <Compile Remove="obj\**" />
+    <Compile Remove="Tarea3\bin\**" />
+    <Compile Remove="Tarea3\obj\**" />
+    <EmbeddedResource Remove="bin\**" />
+    <EmbeddedResource Remove="obj\**" />
+    <EmbeddedResource Remove="Tarea3\bin\**" />
+    <EmbeddedResource Remove="Tarea3\obj\**" />
+    <None Remove="bin\**" />
+    <None Remove="obj\**" />
+    <None Remove="Tarea3\bin\**" />
+    <None Remove="Tarea3\obj\**" />
   </ItemGroup>
 
   <ItemGroup>
     <None Include="Ejercicio_Aplicada.sln" />
-    <None Include="obj\Debug\netcoreapp2.1\Ejercicio_Aplicada.AssemblyInfoInputs.cache" />
-    <None Include="obj\Debug\netcoreapp2.1\Ejercicio_Aplicada.assets.cache" />
-    <None Include="obj\Debug\netcoreapp2.1\Ejercicio_Aplicada.csproj.CoreCompileInputs.cache" />
-    <None Include="obj\Debug\netcoreapp2.1\Ejercicio_Aplicada.csprojAssemblyReference.cache" />
-    <None Include="obj\Ejercicio_Aplicada.csproj.nuget.cache" />
-    <None Include="obj\Ejercicio_Aplicada.csproj.nuget.g.props" />
-    <None Include="obj\Ejercicio_Aplicada.csproj.nuget.g.targets" />
-    <None Include="obj\Release\netcoreapp2.1\Ejercicio_Aplicada.AssemblyInfoInputs.cache" />
-    <None Include="obj\Release\netcoreapp2.1\Ejercicio_Aplicada.assets.cache" />
-    <None Include="obj\Release\netcoreapp2.1\Ejercicio_Aplicada.csproj.CoreCompileInputs.cache" />
-    <None Include="obj\Release\netcoreapp2.1\Ejercicio_Aplicada.csprojAssemblyReference.cache" />
   </ItemGroup>
 
   <ItemGroup>
@@ -51,11 +43,6 @@
     <EmbeddedResource Update="Form1.resx">
       <DependentUpon>Form1.cs</DependentUpon>
     </EmbeddedResource>
-  </ItemGroup>
-
-  <ItemGroup>
-    <Folder Include="bin\Debug\netcoreapp2.1\" />
-    <Folder Include="bin\Release\netcoreapp2.1\" />
   </ItemGroup>
 
 </Project>

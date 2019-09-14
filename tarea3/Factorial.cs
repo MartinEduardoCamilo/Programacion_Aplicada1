@@ -1,8 +1,10 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.Linq;
 using System.Text;
+using System.Threading.Tasks;
 
-namespace Ejercicio_Aplicada.tarea3
+namespace Tarea3
 {
     class Factorial
     {

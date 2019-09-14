@@ -1,5 +1,6 @@
 ﻿using Ejercicio_Aplicada.Tarea1;
 using Ejercicio_Aplicada.Tarea2;
+using Ejercicio_Aplicada.Tarea3;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -36,7 +37,7 @@ namespace Ejercicio_Aplicada
                     break;
                 case 3:
                     Console.Clear();
-                    Factorial factorial = new Factorial();
+                    Factorial factorials = new Factorial();
                     break;
 
                 default:

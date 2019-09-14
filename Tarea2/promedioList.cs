@@ -22,7 +22,7 @@ namespace Ejercicio_Aplicada.Tarea2
             {
                 Console.WriteLine("Digite la calificacion del estudiante: {0}", i + 1);
                 calificacion = Convert.ToSingle(Console.ReadLine());
-                //Aqui determinamos la calificacion mas alta y la mas pequeña
+                
                 if (Notamaxima < calificacion)
                     Notamaxima = calificacion;
                 if (Notaminima > calificacion && calificacion != -1)
@@ -34,12 +34,12 @@ namespace Ejercicio_Aplicada.Tarea2
                 i++;
 
             } while (salida != -1);
-            //Creamos un ForEach para imprimir todos los elementos dentro del ArrayList.
+            
             foreach (float n in calificaciones)
             {
                 promedio += n;
             }
-            //Aca Imprimimos los Resultados.
+            
             Console.WriteLine("El promedio es: " + promedio / calificaciones.Count);
             Console.WriteLine("La nota Maxima es: " + Notamaxima);
             Console.WriteLine("La nota Minima es: " + Notaminima);
