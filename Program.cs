@@ -1,17 +1,24 @@
 ﻿using Ejercicio_Aplicada.Tarea1;
 using Ejercicio_Aplicada.Tarea2;
 using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
+
+
 
 namespace Ejercicio_Aplicada
 { 
 
-    class Program
+    static class Program
     {
-        static void Main(string[] args)
+        static void Main()
         {
             int opcion = 0;
             Console.WriteLine("1.Menu de la tarea 1");
             Console.WriteLine("2.Menu de la Tarea 2");
+            Console.WriteLine("3.Debug en el Factorial");
             Console.WriteLine("\nEliga una opción: ");
             opcion = Convert.ToInt32(Console.ReadLine());
             switch (opcion)
@@ -24,13 +31,17 @@ namespace Ejercicio_Aplicada
                     Console.Clear();
                     MenuTarea2 menuTarea2 = new MenuTarea2();
                     break;
+                case 3:
+                    Console.Clear();
+                    Factorial factorial = new Factorial();
+                    break;
 
                 default:
                     Console.WriteLine("Opción no valida");
                     break;
             }
-            
-   
+        
         }
+     
     }
 }

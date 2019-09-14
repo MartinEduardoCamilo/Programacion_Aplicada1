@@ -2,6 +2,7 @@
 using System.Collections.Generic;
 using System.Text;
 
+
 namespace Ejercicio_Aplicada.Tarea2
 {
     class MenuTarea2
