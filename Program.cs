@@ -37,16 +37,16 @@ namespace Ejercicio_Aplicada
                     break;
                 case 3:
                     Console.Clear();
-                    Factorial factorials = new Factorial();
+                    Factoriales factoriales = new Factoriales();
+                    factoriales.CalcularFactorial(9);
                     break;
 
                 default:
                     Console.WriteLine("Opción no valida");
                     break;
             }
-        
-        }
-      
+
+        }  
      
     }
 }

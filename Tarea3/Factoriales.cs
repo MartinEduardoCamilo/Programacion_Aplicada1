@@ -4,9 +4,9 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace Tarea3
+namespace Ejercicio_Aplicada.Tarea3
 {
-    class Factorial
+    public class Factoriales
     {
         public double CalcularFactorial(double numero)
         {
